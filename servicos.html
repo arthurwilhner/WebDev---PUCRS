@@ -70,20 +70,20 @@
 
     <section class="mt-5 pt-4 border-top">
         <h3 class="text-center mb-4">Agende seu Serviço</h3>
-        <p class="text-center lead mb-4">Selecione o que precisa e escolha o melhor dia e horário para você.</p>
+        <p class="text-center lead mb-4">Selecione o serviço que precisa e escolha o melhor dia e horário para você.</p>
 
         <form id="form-agendamento" class="w-75 mx-auto">
             
             <fieldset class="mb-4">
                 <legend class="h5">1. Qual serviço você deseja?</legend>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="delivery" id="servicoDelivery">
+                    <input class="form-check-input" type="radio" name="servico_escolhido" value="delivery" id="servicoDelivery" checked>
                     <label class="form-check-label" for="servicoDelivery">
                         Entrega em Domicílio (Delivery)
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="cesta" id="servicoCesta">
+                    <input class="form-check-input" type="radio" name="servico_escolhido" value="cesta" id="servicoCesta">
                     <label class="form-check-label" for="servicoCesta">
                         Montagem de Cesta Básica Personalizada
                     </label>
@@ -106,7 +106,7 @@
             
             <div class="mb-3">
                 <label for="obs" class="form-label">Observações (opcional):</label>
-                <textarea class="form-control" id="obs" rows="3" placeholder="Ex: Deixar na portaria, item sem lactose para a cesta, etc."></textarea>
+                <textarea class="form-control" id="obs" name="observacoes" rows="3" placeholder="Ex: Deixar na portaria, item sem lactose para a cesta, etc."></textarea>
             </div>
 
             <div class="d-grid">

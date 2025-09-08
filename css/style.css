@@ -1,3 +1,4 @@
+/* Definição de Cores, margens e fontes */
 :root{
     --cor-fundo: #fff4ec;
     --cor-primaria: #519872;
@@ -53,6 +54,7 @@ header a:hover, footer a:hover{
     color: var(--cor-fundo);
 }
 
+/* Definição de Estilos para Botões */
 .btn-primary{
     background-color: var(--cor-primaria);
     border-color: var(--cor-primaria)
@@ -88,6 +90,7 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
+/* Definição de Estilos para o Menu de Navegação */
 header nav ul{
     list-style:none;
     padding-left: 0;

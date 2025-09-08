@@ -5,59 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Minimercado Wilhner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel ="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <h1>Minimercado Wilhner</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
+           <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
     </header>
 
     <hr>
 
-    <main>
-        <main class="container my-4"> 
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos diversas comodidades para facilitar o seu dia a dia. Conheça nossos serviços:</p>
+<main class="container my-4"> 
+    <h2 class="text-center mb-5">Nossos Serviços</h2>
+    <p class="text-center lead mb-5">Oferecemos diversas comodidades para facilitar o seu dia a dia. Conheça nossos serviços:</p>
 
-        <section>
-            <h3>Entrega em Domicílio (Delivery)</h3>
-            <img src="https://clubemotoboy.com.br/wp-content/uploads/2022/05/delivery-21-12-2018.jpg" alt="Motocicleta de entrega">
-            <p>
-                Não pode vir até aqui? Nós vamos até você! Faça seu pedido por telefone ou WhatsApp e receba suas compras no conforto da sua casa.
-            </p>
-            <p>
-                <strong>Como funciona:</strong> Entre em contato, envie sua lista de compras e agende o melhor horário para receber.
-            </p>
-            <p>
-                <strong>Área de cobertura:</strong> Atendemos todos os bairros em um raio de 5km do nosso endereço.
-            </p>
-            <p><strong>Valor:</strong> Taxa de entrega fixa de R$ 10,00.</p>
-        </section>
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://clubemotoboy.com.br/wp-content/uploads/2022/05/delivery-21-12-2018.jpg" class="img-fluid rounded-start h-100" alt="Serviço de entrega a Domicílio" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title h3">Entrega em Domicílio (Delivery)</h5>
+                    <p class="card-text">
+                        Não pode vir até aqui? Nós vamos até você! Faça seu pedido por telefone ou WhatsApp e receba suas compras no conforto da sua casa.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Como funciona:</strong> Entre em contato, envie sua lista de compras e agende o melhor horário para receber.</li>
+                        <li class="list-group-item"><strong>Área de cobertura:</strong> Atendemos todos os bairros em um raio de 5km do nosso endereço.</li>
+                        <li class="list-group-item"><strong>Valor:</strong> Taxa de entrega fixa de R$ 10,00.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <hr>
+    <div class="card mb-4">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.falamart.com.br/wp-content/uploads/2024/09/como-montar-uma-cesta-basica.jpg" class="img-fluid rounded-start h-100" alt="Montagem de Cesta básica de alimentos" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title h3">Montagem de Cesta Básica Personalizada</h5>
+                    <p class="card-text">
+                        Monte uma cesta básica com os produtos que você mais gosta ou precisa. Ideal para doações ou para organizar as compras do mês.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Como funciona:</strong> Você nos informa os itens e a quantidade desejada, e nós montamos a cesta para você retirar na loja ou receber via delivery.</li>
+                        <li class="list-group-item"><strong>Valor:</strong> O valor final depende dos itens escolhidos. Não há taxa adicional pelo serviço de montagem.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <section>
-            <h3>Montagem de Cesta Básica Personalizada</h3>
-            <img src="https://www.falamart.com.br/wp-content/uploads/2024/09/como-montar-uma-cesta-basica.jpg" alt="Cesta de alimentos">
-            <p>
-                Monte uma cesta básica com os produtos que você mais gosta ou precisa. Ideal para doações ou para organizar as compras do mês.
-            </p>
-            <p>
-                <strong>Como funciona:</strong> Você nos informa os itens e a quantidade desejada, e nós montamos a cesta para você retirar na loja ou receber via delivery.
-            </p>
-            <p><strong>Valor:</strong> O valor final depende dos itens escolhidos. Não há taxa adicional pelo serviço de montagem.</p>
-        </section>
+    <section class="mt-5 pt-4 border-top">
+        <h3 class="text-center mb-4">Agende seu Serviço</h3>
+        <p class="text-center lead mb-4">Selecione o que precisa e escolha o melhor dia e horário para você.</p>
 
-    </main>
+        <form id="form-agendamento" class="w-75 mx-auto">
+            
+            <fieldset class="mb-4">
+                <legend class="h5">1. Qual serviço você deseja?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="delivery" id="servicoDelivery">
+                    <label class="form-check-label" for="servicoDelivery">
+                        Entrega em Domicílio (Delivery)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="cesta" id="servicoCesta">
+                    <label class="form-check-label" for="servicoCesta">
+                        Montagem de Cesta Básica Personalizada
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="h5">2. Quando?</legend>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="dataAgendamento" class="form-label">Escolha o dia:</label>
+                        <input type="date" class="form-control" id="dataAgendamento" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="horaAgendamento" class="form-label">Escolha o horário:</label>
+                        <input type="time" class="form-control" id="horaAgendamento" required>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <div class="mb-3">
+                <label for="obs" class="form-label">Observações (opcional):</label>
+                <textarea class="form-control" id="obs" rows="3" placeholder="Ex: Deixar na portaria, item sem lactose para a cesta, etc."></textarea>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Confirmar Agendamento</button>
+            </div>
+
+        </form>
+    </section>
+
+</main>
 
     <hr>
 

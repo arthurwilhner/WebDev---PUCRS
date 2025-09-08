@@ -83,3 +83,95 @@ header a:hover, footer a:hover{
     color: var(--cor-destaque);
     font-weight: bold;
 }
+.promo-especial:hover{
+    color: #d4378e;
+    text-decoration: underline;
+}
+
+header nav ul{
+    list-style:none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+header nav li a{
+    font-weight: bold;
+}
+
+footer nav ul{
+    list-style:none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+footer nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+footer nav li a{
+    font-weight: bold;
+}
+
+/* ===== ESTILOS DOS CARDS DE PRODUTO ===== */
+
+.card {
+    border: 1px solid var(--cor-fundo); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.card:hover {
+    border: 1px solid var(--cor-destaque); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    transform: translateY(-5px) scale(1.02); 
+}
+
+.card-img-top {
+    max-height: 150px;
+    object-fit: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-body {
+    min-height: 120px;
+}
+
+.card-footer {
+    background-color: transparent !important;
+    border-top: none !important;
+}
+
+/* Correção para alinhar os cards do Swiper */
+.swiper-slide {
+    height: auto; 
+}
+
+.swiper-wrapper {
+    align-items: stretch; 
+}
+
+/* Garante que as imagens dentro do card tenham altura máxima e não causem desalinhamento */
+.card-img-top {
+    max-height: 150px;       
+    object-fit: contain;     
+    width: 100%;             
+    padding: 10px;           
+}
+
+/* Ajusta a altura mínima do card-body para dar mais uniformidade, se necessário */
+.card-body {
+    min-height: 120px; 
+}
+
+/* Adiciona um espaçamento interno ao contêiner do carrossel */
+.swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
